@@ -13,8 +13,9 @@ def addandshow(request):
             nm=fm.cleaned_data['name']
             em=fm.cleaned_data['email']
             ps=fm.cleaned_data['password']
+            std=fm.cleaned_data['standard']
             # ag=fm.cleaned_data['age']
-            reg=user(name=nm,email=em,password=ps)
+            reg=user(name=nm,email=em,password=ps,standard=std)
             reg.save()
             fm= registeruser()
             send_mail(

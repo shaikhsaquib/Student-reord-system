@@ -20,6 +20,7 @@
                     <th scope="col">NAME</th>
                     <th scope="col">EMAIL</th>
                     <th scope="col">password</th>
+                    <th scope="col">Standard</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -30,6 +31,7 @@
                     <td>{{f.name}}</td>
                     <td>{{f.email}}</td>
                     <td>{{f.password}}</td>
+                    <td>{{f.Standard}}</td>
                     <td>
                     <a href="{% url 'update' f.id %}" class="btn btn-warning btn-sm" >Edit</a>
                     <form action="{% url 'delete' f.id %}" method="POST" class="d-inline">
