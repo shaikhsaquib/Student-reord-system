@@ -5,7 +5,7 @@ class user(models.Model):
     name=models.CharField(max_length=50)
     email=models.EmailField( max_length=254)
     password=models.CharField(max_length=50)
-    standard=models.CharField(null=False, max_length=50,default='ENTER THE CALLS IN WHICH YOU ARE STUDYING')
+    standard=models.CharField(null=False, max_length=50)
     def __str__(self):
         return self.name
     

@@ -23,7 +23,7 @@ import os
 SECRET_KEY = 'django-insecure-v^da$%b38m_mh7oj@o-koa&4@2pw&+ib=s09*5iobq%q%$let&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST= "smtp.gmail.com"
 EMAIL_PORT=587
@@ -33,7 +33,7 @@ EMAIL_USE_TLS = True
 
 
 
-ALLOWED_HOSTS = ['studentrecodsystem.herokuapp.com','localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
